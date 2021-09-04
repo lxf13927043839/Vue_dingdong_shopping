@@ -1,0 +1,58 @@
+// 按需引入vant组件
+import Vue from 'vue'
+import { Tabbar, TabbarItem, Search, Swipe, SwipeItem, Toast, Grid, GridItem, Icon, Tab, Tabs, NavBar, GoodsAction, GoodsActionIcon, GoodsActionButton, Sidebar, SidebarItem, DropdownMenu, DropdownItem, Tag, Button, Divider, Cell, CellGroup, Field, Form, ActionSheet, RadioGroup, Radio, DatetimePicker, Dialog, CouponCell, CouponList, AddressEdit, AddressList, Sticky, Checkbox, CheckboxGroup, SubmitBar, Badge, ContactCard, Image as VanImage, Lazyload, Skeleton, Popup, Switch } from 'vant'
+
+import 'vant/lib/index.css'
+
+// 将所有 Toast 的展示时长设置为 2000 毫秒
+Toast.setDefaultOptions({ duration: 1000 })
+
+Vue.use(Tabbar)
+Vue.use(TabbarItem)
+Vue.use(Search)
+Vue.use(Swipe)
+Vue.use(SwipeItem)
+Vue.use(Toast)
+Vue.use(Grid)
+Vue.use(GridItem)
+Vue.use(Icon)
+Vue.use(Tab)
+Vue.use(Tabs)
+Vue.use(NavBar)
+Vue.use(GoodsAction)
+Vue.use(GoodsActionIcon)
+Vue.use(GoodsActionButton)
+Vue.use(Sidebar)
+Vue.use(SidebarItem)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
+Vue.use(Tag)
+Vue.use(Button)
+Vue.use(Divider)
+Vue.use(Cell)
+Vue.use(CellGroup)
+Vue.use(Field)
+Vue.use(Form)
+Vue.use(ActionSheet)
+Vue.use(RadioGroup)
+Vue.use(Radio)
+Vue.use(DatetimePicker)
+Vue.use(Dialog)
+Vue.use(CouponCell)
+Vue.use(CouponList)
+Vue.use(AddressEdit)
+Vue.use(AddressList)
+Vue.use(Sticky)
+Vue.use(CheckboxGroup)
+Vue.use(Checkbox)
+Vue.use(SubmitBar)
+Vue.use(Badge)
+Vue.use(ContactCard)
+Vue.use(VanImage)
+Vue.use(Lazyload, {
+  loading: require('./assets/images/placeholderImg/product-img-load.png')
+})
+Vue.use(Skeleton)
+Vue.use(Popup)
+Vue.use(Switch)
+
