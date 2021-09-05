@@ -45,6 +45,7 @@
 
 <script>
 import BScroll from 'better-scroll'
+
 import foodDetail from './DetailFood.vue'
 // 导入骨架屏
 import skeleton from './skeleton'

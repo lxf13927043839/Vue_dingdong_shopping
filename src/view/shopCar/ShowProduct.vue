@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <span>￥{{ item.price * item.num }}</span>
+                    <span>￥{{ (item.price * item.num).toFixed(2) }}</span>
                 </div>
             </li>
         </ul>

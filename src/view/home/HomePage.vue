@@ -155,6 +155,7 @@
 
 <script>
 import BScroll from 'better-scroll'
+
 // 展示商品组件
 import showProductList from './ShowProductList.vue'
 // 小火箭，返回顶部
