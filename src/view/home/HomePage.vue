@@ -382,6 +382,17 @@ export default {
           }
         })
     },
+
+    // 添加购物车的动画类，500ms后移除，这里的话，没法使用ref获得dom元素，因为它是组件来着，通过原生方式
+    _listenInCart () {
+      // 给底部Tabbar购物车添加类
+      document.getElementById("shopCarId").classList.add('moveToCart');
+      setTimeout(() => {
+        // 500毫秒后移除底部购物车的动画类
+        document.getElementById("shopCarId").classList.remove('moveToCart');
+      }, 500)
+    },
+
     /*
       动画初始值处理
       获取点击的图片的距离屏幕左上角的位置，然后把该位置
@@ -409,6 +420,7 @@ export default {
       el.style.transform = `translate(${imgPosition.x}px, ${imgPosition.y}px)`
       el.style.opacity = 1
     },
+    // enter里边就不加done了
     enter (el) {
       var imgSize = this.$refs.initialImg[this.clickIndex].getBoundingClientRect()
       // console.log(imgSize) 这里除以 5 是在不同分辨率下,会有点变化,目前在js中找不到直接设置rem的方法
@@ -437,6 +449,7 @@ export default {
       if (pic) {
         pic.show = false;
       }
+      this._listenInCart()
     },
     /*
       计算出小图片移动的距离

@@ -25,7 +25,7 @@
             <!-- 购物车徽标的显示，需要用户登录、数量不为0 -->
             <van-tabbar-item to="/home/shopcar"
             :class="{ 'hide-badge': hideBadge}"
-            :badge="totalProductNum" >
+            :badge="totalProductNum" id="shopCarId">
                 <span>{{ $t("home.cart") }}</span>
                 <template #icon="carProps">
                     <img ref="shopCarRef" :src="carProps.active ? carIcon.active : carIcon.inactive" />
@@ -155,4 +155,27 @@ export default {
         display: none;
       }
     }
+    /* 商品进入购物车时，购物车弹簧效果,就是放大缩小 */
+    @keyframes carBounce {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.7);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    75% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  /* 通过添加类，移除类 */
+  .moveToCart {
+    animation: carBounce 0.5s ease-in-out;
+  }
+
 </style>
