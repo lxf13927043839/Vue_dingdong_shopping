@@ -56,6 +56,14 @@ import menulistlk28 from './api/recipe/menulist/lk28.json'
 import menulistlk29 from './api/recipe/menulist/lk29.json'
 import menulistlk30 from './api/recipe/menulist/lk30.json'
 import menulistlk31 from './api/recipe/menulist/lk31.json'
+import menulistlk32 from './api/recipe/menulist/lk32.json'
+import menulistlk33 from './api/recipe/menulist/lk33.json'
+import menulistlk34 from './api/recipe/menulist/lk34.json'
+import menulistlk35 from './api/recipe/menulist/lk35.json'
+import menulistlk36 from './api/recipe/menulist/lk36.json'
+import menulistlk37 from './api/recipe/menulist/lk37.json'
+import menulistlk38 from './api/recipe/menulist/lk38.json'
+
 
 import youLike from './api/cart/youlike.json'
 
@@ -117,6 +125,14 @@ Mock.mock('http://www.lixiufeng.com/recipe/menulist/lk28', menulistlk28)
 Mock.mock('http://www.lixiufeng.com/recipe/menulist/lk29', menulistlk29)
 Mock.mock('http://www.lixiufeng.com/recipe/menulist/lk30', menulistlk30)
 Mock.mock('http://www.lixiufeng.com/recipe/menulist/lk31', menulistlk31)
+Mock.mock('http://www.lixiufeng.com/recipe/menulist/lk32', menulistlk32)
+Mock.mock('http://www.lixiufeng.com/recipe/menulist/lk33', menulistlk33)
+Mock.mock('http://www.lixiufeng.com/recipe/menulist/lk34', menulistlk34)
+Mock.mock('http://www.lixiufeng.com/recipe/menulist/lk35', menulistlk35)
+Mock.mock('http://www.lixiufeng.com/recipe/menulist/lk36', menulistlk36)
+Mock.mock('http://www.lixiufeng.com/recipe/menulist/lk37', menulistlk37)
+Mock.mock('http://www.lixiufeng.com/recipe/menulist/lk38', menulistlk38)
+
 
 Mock.mock('http://www.lixiufeng.com/cart/youlike', youLike)
 

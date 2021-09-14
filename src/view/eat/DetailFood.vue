@@ -4,7 +4,9 @@
             <template>
                 <div class="food-item" v-for="item in foodListData" :key="item.id">
                     <div class="food-img">
-                        <img v-lazy="item.image" alt="">
+                        <!-- <img v-lazy="item.image" alt=""> -->
+                        <!-- 这里的懒加载，似乎会跟waterfull冲突了，暂时先不使用懒加载，它页面显示没问题，但是会报错，初步原因是说找不到src -->
+                        <img :src="item.image" alt="">
                     </div>
                     <p class="food-name">{{ item.name }}</p>
                     <div class="author">
