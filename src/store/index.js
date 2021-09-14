@@ -215,7 +215,7 @@ export default new Vuex.Store({
      state.loginState = false
      window.sessionStorage.setItem('loginState', state.loginState)
    },
-   // 在购物车页面,去逛逛、和首页的分类图标、需要修改导航
+   // 在购物车页面,去逛逛、和首页的分类图标、需要修改导航,他会在home页面进行写入sessionStorage同步
    changeTabbarIndex (state, index) {
      state.vuexTabbarIndex = index
    }

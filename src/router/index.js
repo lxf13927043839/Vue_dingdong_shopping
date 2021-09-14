@@ -143,6 +143,7 @@ VueRouter.prototype.push = function push (location, onResolve, onReject) {
 }
 
 router.beforeEach((to, from, next) => {
+  // 在store数据初始化的时候，会设置好，所以跳转时候不用担心，获取为null
   var loginState = window.sessionStorage.getItem('loginState')
   if (loginState === 'false') {
     loginState = false
