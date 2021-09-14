@@ -259,6 +259,7 @@ export default {
         return
       }
       // 这里通过下标来获取是选择了哪个元素，图片，上边放了20，到时要设置初始化位置
+      // 这里不需要了，this.clickindex就是你点击的图片的索引了，可以注释掉
       this.showAnimatePic.findIndex((pic, index) => {
         if (!pic.show) {
           pic.show = true
