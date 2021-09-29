@@ -1,6 +1,6 @@
 <template>
     <div class="langguage">
-        <van-nav-bar right-text="保存" title="请选择语言" left-arrow
+        <van-nav-bar :right-text="$t('order.save')" :title="$t('mine.switchLanguage')" left-arrow
         @click-right="onSaveLanguage"
         @click-left="$router.back()"/>
 
